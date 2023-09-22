@@ -12,3 +12,5 @@ if [[ `ps ho command $(ps ho ppid $$)` == 'urxvt' ]]; then
 fi
 
 alias vim=nvim
+
+PATH=~/.travisconfig/scripts:$PATH
