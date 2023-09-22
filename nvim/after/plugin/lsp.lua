@@ -20,6 +20,9 @@ mason_lspconfig.setup({
         settings = {
           completions = {
             completeFunctionCalls = true
+          },
+          implicitProjectConfiguration = {
+            checkJs = true
           }
         }
       })
@@ -42,22 +45,22 @@ cmp.setup({
       winhighlight = "Normal:NormalNC,FloatBorder:NormalNC,Search:None"
     }
   },
-  -- mapping = {
-  --   ["<Tab>"] = cmp.mapping(function(fallback)
-  --     -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
-  --     if cmp.visible() then
-  --       local entry = cmp.get_selected_entry()
-  --       if not entry then
-  --         cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
-  --       else
-  --         cmp.confirm()
-  --       end
-  --     else
-  --       fallback()
-  --     end
-  --   end, {"i","s","c",}),
-  --   ...
-  -- },
+  mapping = {
+--    ["<Tab>"] = cmp.mapping(function(fallback)
+--      -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
+--      if cmp.visible() then
+--        local entry = cmp.get_selected_entry()
+--        if not entry then
+--          cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+--        else
+--          cmp.confirm()
+--        end
+--      else
+--        fallback()
+--      end
+--    end, {"i","s","c",}),
+    ...
+  },
 })
 
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -68,3 +71,4 @@ lsp_zero.defaults.cmp_mappings({
   ['<C-Spaces>'] = cmp.mapping.complete(),
 
 })
+
