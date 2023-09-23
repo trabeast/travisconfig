@@ -9,3 +9,4 @@ This is a repository for my personal configuration in ArchLinux.
 - Display Protocol: Wayland
 - Window Manager: Sway
 - Editor: Neovim
+- Input: Fcitx (Mozc)
