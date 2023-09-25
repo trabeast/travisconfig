@@ -45,5 +45,6 @@ return require('packer').startup(function(use)
   use 'sbdchd/neoformat'
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use 'tpope/vim-surround'
 end)
 
